@@ -58,32 +58,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
   flex-wrap: wrap;
 }
 
 .productCard {
+  position: relative;
   margin-top: 2rem;
   overflow: hidden;
   width: 20rem;
-  min-height: 28rem;
+  min-height: 23rem;
   background-color: var(--card-bg-color);
   color: var(--card-text-color);
   margin-right: 2rem;
   border-radius: var(--card-border-radius);
+  transition: all 0.3s ease-in-out;
 }
 
 .productCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Esto evita que la imagen se distorsione */
 }
 
 .containerImg {
-  height: 18rem;
+  height: 23rem;
   overflow: hidden;
-  /* Esto asegura que la imagen no se desborde del contenedor */
 }
 
 .productCard h2 {
@@ -109,6 +108,7 @@ body {
   font-size: medium;
   font-family: sans-serif;
   font-weight: 400;
+  z-index: 10;
 }
 
 .productCard button:hover {
@@ -124,10 +124,27 @@ body {
 }
 
 .datos {
+  background-color: var(--card-bg-color);
+  position: absolute;
+  border-radius: var(--card-border-radius);
+  bottom: -3rem;
   display: flex;
   flex-direction: column;
   padding: 0 1rem 0 1rem;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
 }
+
+.productCard:hover .datos {
+  bottom: 2.7rem;
+  cursor: pointer;
+}
+
+.price {
+  width: 100%;
+  text-align: center;
+}
+
 .datos h2 {
   color: var(--link-hover-bg-color);
   
@@ -137,4 +154,74 @@ body {
   font-size: medium;
   text-align: justify;
   margin-top: 0;
+}
+
+.containerForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--text-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentForm {
+  width: 100%;
+}
+
+.formContainer {
+  background-color: var(--navbar-bg-color);
+  width: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 2rem;
+  border-radius: var(--card-border-radius);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  color: var(--link-hover-bg-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.formInput {
+  padding: 0.5rem;
+  border: 1px solid var(--navbar-bg-color);
+  border-radius: 4px;
+  background-color: #080808;
+  color: var(--text-color);
+}
+
+.formButton {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--link-hover-bg-color);
+  color: var(--link-hover-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.formButton:hover {
+  background-color: var(--navbar-bg-color);
+  color: var(--text-color);
 }
