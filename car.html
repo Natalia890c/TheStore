@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/car.css">
+  <script src="./js/car.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>The Store</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Products</a></li>
+      <li><a href="car.html">Car</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="newProduct.html">New Product</a></li>
+    </ul>
+  </nav>
+
+  <div class="containerCar">
+    <div class="car">
+      <div class="headcar">
+        <h1>My Car</h1>
+      </div>
+      <table id="cartTable" class="carTable">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody">
+          <!-- Aquí se agregarán las filas dinámicamente -->
+        </tbody>
+      </table>
+      <div class="Total"><h2>Total a Pagar: $<span id="cartTotal"></span></h2></div>
+    </div>
+  </div>
+</body>
+
+</html>

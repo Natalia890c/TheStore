@@ -1,0 +1,80 @@
+:root {
+  --primary-bg-color: black;
+  --navbar-bg-color: #131313;
+  --text-color: #f4a524;
+  --link-hover-color: #000000;
+  --link-hover-bg-color: #f4a524;
+  --card-bg-color: #1c1c1c;
+  --card-text-color: #ffffff;
+  --card-border-radius: 8px;
+  --primary-bg-color: black;
+  --card-image-size: 5rem;
+}
+
+.containerCar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding-top: 5rem;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  padding: 2rem;
+  background-color: var(--card-bg-color);
+  border-radius: var(--card-border-radius);
+}
+
+.headcar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+.headcar h1 {
+  font-size: large;
+  padding: 0.5rem;
+  background-color: var(--link-hover-bg-color);
+  color: var(--link-hover-color);
+  border-radius: var(--card-border-radius);
+}
+
+.carTable {
+  width: 100%;
+}
+
+#cartTable img {
+  width: 8rem;
+  height: 4rem;
+  object-fit: cover;
+  /* Ajustar el tamaño manteniendo la proporción y cortando el exceso */
+}
+
+
+#cartTable th {
+  text-align: left;
+  color:  var(--text-color);
+}
+
+#cartTable td {
+  padding-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Total h2 {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--link-hover-bg-color);
+  color: var(--link-hover-color);
+  border-radius: var(--card-border-radius);
+  font-size: medium;
+}
