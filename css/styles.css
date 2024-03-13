@@ -225,3 +225,8 @@ body {
   background-color: var(--navbar-bg-color);
   color: var(--text-color);
 }
+.warning {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
