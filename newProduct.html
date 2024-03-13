@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>The Store</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Products</a></li>
+        <li><a href="#cart">Card</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="newProduct.html">New Product</a></li>
+      </ul>
+    </nav>
+
+    <div class="containerForm">
+      <!-- <img src="TheStore.jpg" alt="The Store" width="250" height="60"><br><br> -->
+      <form action="procesar_newProduct.php" method="post" class="formContainer">
+        <div class="title">
+          <h1>New Product</h1>
+        </div>
+        <div class="contentForm">
+          <div class="formGroup">
+            <label for="nombre">Name:</label>
+            <input type="text" id="nombre" name="nombre" class="formInput">
+          </div>
+
+          <div class="formGroup">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" class="formInput">
+          </div>
+
+          <div class="formGroup">
+            <label for="inventory">Inventory:</label>
+            <input type="number" id="inventory" name="inventory" class="formInput">
+          </div>
+
+          <button type="button" id="createProduct" class="formButton">Create Product</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
